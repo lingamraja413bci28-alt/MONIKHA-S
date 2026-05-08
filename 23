@@ -1,0 +1,9 @@
+# Update the '_' below to solve the problem
+length = 11
+breadth = 13
+
+area = length * breadth
+perimeter = 2 * (length + breadth)
+
+print(area)
+print(perimeter)
