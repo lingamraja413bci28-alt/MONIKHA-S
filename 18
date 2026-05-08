@@ -1,0 +1,5 @@
+# Fix one of the variable names to make the code work
+
+first name = "Code"
+last name = "Chef"
+print(first name, last name)
