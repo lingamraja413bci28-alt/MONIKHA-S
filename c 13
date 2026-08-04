@@ -1,0 +1,27 @@
+if __name__ == '__main__':
+    # 1. Read the number of elements in the initial set (not strictly needed)
+    _ = input()
+    # 2. Initialize the main set A
+    a = set(map(int, input().split()))
+    
+    # 3. Read the number of other sets/operations
+    n = int(input())
+    
+    for _ in range(n):
+        # 4. Read the operation name and the length of the other set
+        operation, _ = input().split()
+        # 5. Read the elements of the other set
+        other_set = set(map(int, input().split()))
+        
+        # 6. Apply the mutation based on the operation name
+        if operation == "update":
+            a.update(other_set)
+        elif operation == "intersection_update":
+            a.intersection_update(other_set)
+        elif operation == "difference_update":
+            a.difference_update(other_set)
+        elif operation == "symmetric_difference_update":
+            a.symmetric_difference_update(other_set)
+            
+    # 7. Print the sum of the elements in set A
+    print(sum(a))
