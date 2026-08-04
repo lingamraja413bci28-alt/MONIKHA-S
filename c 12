@@ -1,0 +1,15 @@
+# Read K
+k = int(input())
+# Read the room numbers and convert to a list of integers
+rooms = list(map(int, input().split()))
+
+# Using a dictionary to count occurrences
+counts = {}
+for room in rooms:
+    counts[room] = counts.get(room, 0) + 1
+
+# Find the room that appears only once
+for room, count in counts.items():
+    if count == 1:
+        print(room)
+        break
