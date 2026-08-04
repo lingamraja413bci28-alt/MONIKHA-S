@@ -1,0 +1,31 @@
+import sys
+
+def solve():
+    # Read all input at once and split by whitespace
+    input_data = sys.stdin.read().split()
+    if not input_data:
+        return
+    
+    ptr = 0
+    # Number of test cases
+    t = int(input_data[ptr])
+    ptr += 1
+    
+    for _ in range(t):
+        # Read set A
+        n_a = int(input_data[ptr])
+        ptr += 1
+        set_a = set(input_data[ptr : ptr + n_a])
+        ptr += n_a
+        
+        # Read set B
+        n_b = int(input_data[ptr])
+        ptr += 1
+        set_b = set(input_data[ptr : ptr + n_b])
+        ptr += n_b
+        
+        # Check if A is a subset of B
+        print(set_a.issubset(set_b))
+
+if __name__ == "__main__":
+    solve()
