@@ -1,0 +1,15 @@
+# Read number of English newspaper subscribers
+n = int(input())
+# Read their roll numbers into a set
+english_subscribers = set(map(int, input().split()))
+
+# Read number of French newspaper subscribers
+b = int(input())
+# Read their roll numbers into a set
+french_subscribers = set(map(int, input().split()))
+
+# Find students in English set but not in French set
+only_english = english_subscribers.difference(french_subscribers)
+
+# Output the total count
+print(len(only_english))
