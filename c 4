@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    int sum = 0;
+    
+    // Read the five-digit integer
+    scanf("%d", &n);
+    
+    // Extract each digit using modulo (%) and division (/)
+    sum += n % 10;    // Adds the 5th digit
+    n /= 10;
+    
+    sum += n % 10;    // Adds the 4th digit
+    n /= 10;
+    
+    sum += n % 10;    // Adds the 3rd digit
+    n /= 10;
+    
+    sum += n % 10;    // Adds the 2nd digit
+    n /= 10;
+    
+    sum += n;         // Adds the 1st (remaining) digit
+    
+    // Print the final sum
+    printf("%d\n", sum);
+    
+    return 0;
+}
