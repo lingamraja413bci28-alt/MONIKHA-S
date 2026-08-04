@@ -1,0 +1,19 @@
+# Read the number of English newspaper subscribers (n)
+n = int(input())
+# Read the roll numbers of English subscribers into a set
+english_subs = set(map(int, input().split()))
+
+# Read the number of French newspaper subscribers (m)
+m = int(input())
+# Read the roll numbers of French subscribers into a set
+french_subs = set(map(int, input().split()))
+
+# Calculate the symmetric difference
+# This gets students in English OR French, but NOT BOTH
+result_set = english_subs.symmetric_difference(french_subs)
+
+# Alternatively, you could use the ^ operator:
+# result_set = english_subs ^ french_subs
+
+# Print the total count of students in the resulting set
+print(len(result_set))
