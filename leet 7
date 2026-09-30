@@ -1,0 +1,47 @@
+
+
+
+typedef struct {
+    
+} MyCircularDeque;
+
+
+MyCircularDeque* myCircularDequeCreate(int k) {
+    
+}
+
+bool myCircularDequeInsertFront(MyCircularDeque* obj, int value) {
+    
+}
+
+bool myCircularDequeInsertLast(MyCircularDeque* obj, int value) {
+    
+}
+
+bool myCircularDequeDeleteFront(MyCircularDeque* obj) {
+    
+}
+
+bool myCircularDequeDeleteLast(MyCircularDeque* obj) {
+    
+}
+
+int myCircularDequeGetFront(MyCircularDeque* obj) {
+    
+}
+
+int myCircularDequeGetRear(MyCircularDeque* obj) {
+    
+}
+
+bool myCircularDequeIsEmpty(MyCircularDeque* obj) {
+    
+}
+
+bool myCircularDequeIsFull(MyCircularDeque* obj) {
+    
+}
+
+void myCircularDequeFree(MyCircularDeque* obj) {
+    
+}
